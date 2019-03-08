@@ -14,3 +14,7 @@ As a start, look at two source files for information: the header of main.f90, an
 The former explains (inperfectly) how to list periods in obsperiods while the latter shows how the fitness parameter (which
 describes how good the match is) is computer. Weights can be assigned to each periods in obsperiods. In the sample file, all
 periods are weighted equally (all have a weight of 1).
+
+A handy feature for debugging purposes is the logical parameter called "verbose" in modules.f90. It shows details of how the fitting is done. It's good to look at that output on a single list of periods (the sample calcperiods only has one model and so is a great sample to use) and check that the fitting is done correctly before launching the code on a series of models.
+
+The model parameters and corresponding matched periods are written out to the file fitnessparameters.dat.
