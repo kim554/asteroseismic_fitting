@@ -12,7 +12,7 @@ A sample of each is provided if you want to run the code.
 The code identifies the periods listed in calcperiods that best match the periods provided by the user in obsperiods.
 As a start, look at two source files for information: the header of main.f90, and line 136-138 of fit.subroutine.f90.
 The former explains (inperfectly) how to list periods in obsperiods while the latter shows how the fitness parameter (which
-describes how good the match is) is computer. Weights can be assigned to each periods in obsperiods. In the sample file, all
+describes how good the match is) is computed. Weights can be assigned to each periods in obsperiods. In the sample file, all
 periods are weighted equally (all have a weight of 1).
 
 A handy feature for debugging purposes is the logical parameter called "verbose" in modules.f90. It shows details of how the fitting is done. It's good to look at that output on a single list of periods (the sample calcperiods only has one model and so is a great sample to use) and check that the fitting is done correctly before launching the code on a series of models.
