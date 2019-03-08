@@ -1,0 +1,31 @@
+nobs1	nobs2	iflag	numpar	siglim  fitlim
+6	12	3	1e8   1e6
+Number of periods before the first ell sequence
+For ell=1 modes		For ell=2 modes
+2			2
+Where sequence begin (see intro comments to main.f90)
+3	0	0	6
+Size of each sequence
+3	0	0	1
+Same 2 lines of info as above, for ell=2 modes. Reset indexing to 1 at beginning of ell=2 period list
+3	7	8	12
+4	1	4	1
+Period list
+379.372		1	1.
+722.183		1	1.
+865.543		1	1.
+912.266		1	1.
+950.310		1	1.
+1033.812	1	1.
+633.067		2	1.
+783.022		2	1.
+833.314		2	1.
+858.911		2	1.
+888.406		2	1.
+915.904		2	1.
+965.829		2	1.
+1011.4		2	1.
+1035.051	2	1.
+1063.433	2	1.
+1094.614	2	1.
+1151.816	2	1.
