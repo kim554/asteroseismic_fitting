@@ -1,8 +1,10 @@
 # asteroseismic_fitting
 Homemade tools to perform the matching of periods in asteroseismic fitting. Designed to work with pulsation output from the WDEC (see repository by that name)
 
-The folder mkgrid contains simple code and a sample input file to generate lists of parameters to be ran through WDEC.
-It generates the gridparameters file. The sample input file (inputparameters) has -1's for a lot of the parameters. This tells the code to set these parameters to defaults that will reproduce composition profiles that resemble those of Althaus, L. G.; Córsico, A. H., Bischoff-Kim, A., Romero, A. D., Renedo, I., García-Berro, E., Miller Bertolami, M. M. 2010, ApJ, 717, 897 (and available on their website http://evolgroup.fcaglp.unlp.edu.ar/TRACKS/PULSATIONS/PULSATIONS_DA/pulsations_cocore.html). The domain of validy is 9,000K < Teff < 14,000K and 500 < Mass < 900 (mass is in thousandths of solar masses).
+The folder mkgrid contains simple code and a sample input file to generate lists of parameters to be ran through WDEC (axk554/wdec). To compile run e.g.
+$ gfortran common_values.f90 subroutines.f90 generate_grid.f90 -o mkgrid
+
+The code generates the gridparameters file. The sample input file (inputparameters) has -1's for a lot of the parameters. This tells the code to set these parameters to defaults that will reproduce composition profiles that resemble those of Althaus, L. G.; Córsico, A. H., Bischoff-Kim, A., Romero, A. D., Renedo, I., García-Berro, E., Miller Bertolami, M. M. 2010, ApJ, 717, 897 (and available on their website http://evolgroup.fcaglp.unlp.edu.ar/TRACKS/PULSATIONS/PULSATIONS_DA/pulsations_cocore.html). The domain of validy is 9,000K < Teff < 14,000K and 500 < Mass < 900 (mass is in thousandths of solar masses).
 
 Those parameters can also be set by hand right in the inputparameter file.
 
